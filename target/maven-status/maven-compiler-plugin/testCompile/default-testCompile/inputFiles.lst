@@ -1,4 +1,6 @@
-D:\Projects\Pique\msusel-pique-sbom-supplychain-sec_custom\src\test\java\toolTests\GrypeWrapperTest.java
-D:\Projects\Pique\msusel-pique-sbom-supplychain-sec_custom\src\test\java\toolTests\SbomOutputProcessorTest.java
-D:\Projects\Pique\msusel-pique-sbom-supplychain-sec_custom\src\test\java\DataStoreTests.java
-D:\Projects\Pique\msusel-pique-sbom-supplychain-sec_custom\src\test\java\toolTests\TrivyWrapperTest.java
+/media/kaveen/D/Linux_Work/PIQUE/msusel-pique-sbom-supplychain-sec_custom/src/test/java/toolTests/SbomOutputProcessorTest.java
+/media/kaveen/D/Linux_Work/PIQUE/msusel-pique-sbom-supplychain-sec_custom/src/test/java/DataStoreTests.java
+/media/kaveen/D/Linux_Work/PIQUE/msusel-pique-sbom-supplychain-sec_custom/src/test/java/calibrationTests/MLWeighterTests.java
+/media/kaveen/D/Linux_Work/PIQUE/msusel-pique-sbom-supplychain-sec_custom/src/test/java/toolTests/TrivyWrapperTest.java
+/media/kaveen/D/Linux_Work/PIQUE/msusel-pique-sbom-supplychain-sec_custom/src/test/java/toolTests/GrypeWrapperTest.java
+/media/kaveen/D/Linux_Work/PIQUE/msusel-pique-sbom-supplychain-sec_custom/src/test/java/utilities/PiqueTestProperties.java

@@ -1,4 +1,6 @@
-toolTests\GrypeWrapperTest.class
-toolTests\SbomOutputProcessorTest.class
+utilities/PiqueTestProperties.class
+calibrationTests/MLWeighterTests.class
+toolTests/GrypeWrapperTest.class
+toolTests/TrivyWrapperTest.class
+toolTests/SbomOutputProcessorTest.class
 DataStoreTests.class
-toolTests\TrivyWrapperTest.class
