@@ -4,7 +4,7 @@
   "global_config" : {
     "benchmark_strategy" : "pique.calibration.NaiveBenchmarker",
     "normalizer" : "pique.evaluation.NoNormalizer",
-    "weights_strategy" : "pique.calibration.NaiveWeighter"
+    "weights_strategy" : "calibration.MLWeighter"
   },
   "factors" : {
     "tqi": {
