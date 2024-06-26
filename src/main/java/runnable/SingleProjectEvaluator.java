@@ -81,23 +81,23 @@ public class SingleProjectEvaluator extends ASingleProjectEvaluator {
          * source code directory. The resulting SBOMs are placed in the input/projects/SBOM directory. The code
          * then proceeds to evaluate each SBOM in the input/projects/SBOM directory.
          */
-        Set<Path> sourceCodeRoots = new HashSet<>();
-        File[] sourceCodeToGenerateSbomsFrom = sourceCodePath.toFile().listFiles();
-        assert sourceCodeToGenerateSbomsFrom != null; // Ensure the directory is not empty
-        for (File f : sourceCodeToGenerateSbomsFrom) {
-            if (!f.getName().equals(".gitignore")) { // Check to avoid adding .gitignore
-                sourceCodeRoots.add(f.toPath()); // Add both files and directories except .gitignore
-            }
-        }
+//        Set<Path> sourceCodeRoots = new HashSet<>();
+//        File[] sourceCodeToGenerateSbomsFrom = sourceCodePath.toFile().listFiles();
+//        assert sourceCodeToGenerateSbomsFrom != null; // Ensure the directory is not empty
+//        for (File f : sourceCodeToGenerateSbomsFrom) {
+//            if (!f.getName().equals(".gitignore")) { // Check to avoid adding .gitignore
+//                sourceCodeRoots.add(f.toPath()); // Add both files and directories except .gitignore
+//            }
+//        }
 
-        TrivySBOMGenerationWrapper trivySBOMGenerator = new TrivySBOMGenerationWrapper();
+//        TrivySBOMGenerationWrapper trivySBOMGenerator = new TrivySBOMGenerationWrapper();
 
-        // Generate SBOMs for each project in the source code directory
-        for (Path projectToGenerateSbomFor : sourceCodeRoots){
-            LOGGER.info("Generating SBOM for: {}", projectToGenerateSbomFor.toString());
-            System.out.println("Generating SBOM for: " + projectToGenerateSbomFor);
-            trivySBOMGenerator.generate(projectToGenerateSbomFor);
-        }
+//        // Generate SBOMs for each project in the source code directory
+//        for (Path projectToGenerateSbomFor : sourceCodeRoots){
+//            LOGGER.info("Generating SBOM for: {}", projectToGenerateSbomFor.toString());
+//            System.out.println("Generating SBOM for: " + projectToGenerateSbomFor);
+//            trivySBOMGenerator.generate(projectToGenerateSbomFor);
+//        }
 
         // get derived quality model location
         Path qmLocation = Paths.get(prop.getProperty("derived.qm"));
@@ -105,8 +105,8 @@ public class SingleProjectEvaluator extends ASingleProjectEvaluator {
         // initialize SBOM analysis tools that will run on each SBOM in the input/projects/SBOM directory
         ITool gyrpeWrapper = new GrypeWrapper(prop.getProperty("github-token-path"));
         ITool trivyWrapper = new TrivyWrapper(prop.getProperty("github-token-path"));
-        ITool sbomqsWrapper_ = new sbomqsWrapper();
-        Set<ITool> tools = Stream.of(gyrpeWrapper,trivyWrapper, sbomqsWrapper_).collect(Collectors.toSet());
+//        ITool sbomqsWrapper_ = new sbomqsWrapper();
+        Set<ITool> tools = Stream.of(gyrpeWrapper,trivyWrapper).collect(Collectors.toSet());
 
         // loop through each SBOM in the input/projects/SBOM directory and store paths in a list
         Set<Path> sbomRoots = new HashSet<>();
