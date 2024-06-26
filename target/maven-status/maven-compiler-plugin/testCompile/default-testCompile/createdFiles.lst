@@ -1,3 +1,4 @@
-toolTests/GrypeWrapperTest.class
+toolTests\GrypeWrapperTest.class
+toolTests\SbomOutputProcessorTest.class
 DataStoreTests.class
-toolTests/TrivyWrapperTest.class
+toolTests\TrivyWrapperTest.class
